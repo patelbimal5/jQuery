@@ -33,3 +33,36 @@ $("h1").click(function(){
 $("button").click(function(){
   $("h1").css("color","purple")
 });
+
+
+$("input").keypress(function(event){
+  $("textarea").text(event.key);
+});
+
+$("h1").on("mouseover", function(){
+  $("h1").css("color","red");
+});
+
+// adding and remvoing html elements
+//before after prepend append
+
+$("h1").before("<button>New</button>");
+
+
+//animating
+$("button").on("click",function(){
+  //$("h1").toggle();
+  //("h1").fadeIn();
+  //$("h1").fadeOut();
+  $("h1").fadeToggle();
+
+  //slideUp slideDown slideToggle
+});
+
+
+//creating our own animation rule
+
+$("button").on("click", function(){
+  //$("h1").animate({opacity: 0.5}); //works only with numeric values only.
+  $("h1").slideUp().slideDown().animate({opacity: 0.5});
+});
