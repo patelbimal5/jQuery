@@ -22,14 +22,14 @@ $("h1").click(function(){
 });
 
 //adding eventlistner to all buttons we have to iterate to loop like below
-for(var i=0; i<3; i++){
-  document.querySelectorAll("button")[i].addEventListner("click", function(){
-    document.querySelectorAll("h1").style.color="purple";
-  });
-}
+// for(var i=0; i<3; i++){
+//   document.querySelectorAll("button")[i].addEventListner("click", function(){
+//     document.querySelectorAll("h1").style.color="purple";
+//   });
+// }
 
 //    VS
 
 $("button").click(function(){
-  $(h1).css("color","purple")
+  $("h1").css("color","purple")
 });
